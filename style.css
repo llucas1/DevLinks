@@ -73,10 +73,13 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-back 0.5s backwards;
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.5s forwards;
+}
+#switch button:hover {
+  outline: 0.5rem solid var(--highlight-clor);
 }
 #switch span {
   display: block;
@@ -159,5 +162,23 @@ footer {
   }
   .light {
     --bg-url: url("./assets/bg-destop-ligth.jpg");
+  }
+}
+/*animation*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+/* volta da animação para darkmode */
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
