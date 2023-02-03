@@ -24,6 +24,7 @@
 body {
   /* agrupar tudo em um background*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "intter", sans-serif;
@@ -149,4 +150,14 @@ footer {
   padding: 1.5rem;
   text-align: center;
   font-size: 0.875rem;
+}
+
+/* media queries*/
+@media (max-width: 43.75rem) {
+  :root {
+    --bg-url: url("./assets/bg-desktop.jpg");
+  }
+  .light {
+    --bg-url: url("./assets/bg-destop-ligth.jpg");
+  }
 }
