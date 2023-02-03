@@ -32,7 +32,8 @@ body * {
 
 /* estilizando o container*/
 #container {
-  width: 22.5rem;
+  width: 100%;
+  max-width: 36.75rem;
   margin: auto;
   padding: 3.5rem auto 0px;
 
@@ -142,6 +143,7 @@ ul li a:hover {
 #social-links a:hover {
   background: var(--highlight-clor);
 }
+
 /* footer*/
 footer {
   padding: 1.5rem;
